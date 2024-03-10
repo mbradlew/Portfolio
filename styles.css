@@ -1,24 +1,23 @@
 body {
     background-color: pink;
-    font-family: "Quicksand",  sans-serif;
+    font-family: "Quicksand", sans-serif;
+    transition: background-color 5s ease-in-out;
 }
 
 h1 {
     color: aqua;
     border-style: double;
-    border-width: 1px;
+    border-width: 6px;
     border-color: aqua;
-    position: absolute;
+    position: top;
     left: 100px;
     top: 200px;
+    transition: color 3s linear, border-color 3s ease-in-out, left 5s ease-in-out, top 5s ease-in-out;
 }
 
 p {
     color: grey;
-}
-
-.green-text {
-    color: grey;
+    transition: color 3s ease-in-out;
 }
 
 .important {
@@ -27,14 +26,13 @@ p {
 
 .important:hover {
     background-color: blue;
+    transition: background-color 3s ease-in-out;
 }
 
-a[href="www.linkedin.com/in/malik-bradley-322001164"] {
-    background-color: red;
-}
-
+a[href="www.linkedin.com/in/malik-bradley-322001164"],
 a[href="https://www.steelers.com/"] {
-    background-color: rgb(255, 0, 0);
+    background-color: whitesmoke;
+    transition: background-color 3s ease-in-out;
 }
 
 footer {
@@ -44,4 +42,6 @@ footer {
 
 .fa-truck-fast {
     color: magenta;
-}   
+    transition: color 3s ease-in-out;
+}
+
