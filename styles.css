@@ -1,47 +1,75 @@
 body {
-    background-color: pink;
-    font-family: "Quicksand", sans-serif;
-    transition: background-color 5s ease-in-out;
+    font-family: "quicksand", sans-seriff;
+    background-color: #f9f9f9;
+    transition: background-color 2s ease-in-out;
 }
 
 h1 {
-    color: aqua;
-    border-style: double;
-    border-width: 6px;
-    border-color: aqua;
-    position: top;
-    left: 100px;
-    top: 200px;
-    transition: color 3s linear, border-color 3s ease-in-out, left 5s ease-in-out, top 5s ease-in-out;
+    color: #333;
+    text-align: center;
+    transition: color 3s ease-in-out;
 }
 
 p {
-    color: grey;
+    color: #555;
     transition: color 3s ease-in-out;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #007bff;
+    transition: color 3s ease-in-out;
+}
+
+.job-details {
+    margin-left: 20px;
+}
+
+.job-details p {
+    margin-bottom: 10px;
 }
 
 .important {
-    width: 50%;
-}
-
-.important:hover {
-    background-color: blue;
-    transition: background-color 3s ease-in-out;
-}
-
-a[href="www.linkedin.com/in/malik-bradley-322001164"],
-a[href="https://www.steelers.com/"] {
-    background-color: whitesmoke;
-    transition: background-color 3s ease-in-out;
-}
-
-footer {
-    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-}
-
-.fa-truck-fast {
-    color: magenta;
+    color: #28a745;
     transition: color 3s ease-in-out;
 }
 
+.important:hover {
+    color: #dc3545;
+    transition: color 3s ease-in-out;
+}
+
+a {
+    color: #007bff;
+    transition: color 3s ease-in-out;
+}
+
+a:hover {
+    color: #0056b3;
+    transition: color 3s ease-in-out;
+}
+
+a[href="www.linkedin.com/in/malik-bradley-322001164"] {
+    color: #007bff;
+    transition: color 3s ease-in-out;
+}
+
+a[href="www.linkedin.com/in/malik-bradley-322001164"]:hover {
+    color: #0056b3;
+    transition: color 3s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    transition: background-color 3s ease-in-out, color 3s ease-in-out;
+}
+
+.fa-truck-fast {
+    color: #f39c12;
+    transition: color 3s ease-in-out;
+}
