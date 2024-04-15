@@ -1,5 +1,5 @@
 body {
-    font-family: "quicksand", sans-seriff;
+    font-family: "Quicksand", sans-serif;
     background-color: #f9f9f9;
     transition: background-color 2s ease-in-out;
 }
@@ -23,10 +23,24 @@ p {
 
 .job-details {
     margin-left: 20px;
+    display: flex;
+    flex-direction: column; /* Stack job details vertically */
 }
 
 .job-details p {
     margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .job-details {
+        flex-direction: row; /* Arrange job titles and details side by side */
+        align-items: center; /* Align items vertically */
+    }
+    
+    .job-details p {
+        margin-bottom: 0; /* Remove margin between job titles and details */
+        margin-right: 20px; /* Add space between job titles and details */
+    }
 }
 
 .important {
